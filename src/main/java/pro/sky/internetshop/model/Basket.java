@@ -3,17 +3,17 @@ package pro.sky.internetshop.model;
 import java.util.List;
 
 public class Basket {
-    private List<Item> itemList;
+    private List<Integer> itemsIDList;
 
-    public Basket(List<Item> itemList) {
-        this.itemList = itemList;
+    public Basket(List<Integer> itemsIDList) {
+        this.itemsIDList = itemsIDList;
     }
 
-    public List<Item> getItemList() {
-        return itemList;
+    public List<Integer> getItemsIDList() {
+        return itemsIDList;
     }
 
-    public void setItemList(List<Item> itemList) {
-        this.itemList = itemList;
+    public void setItemsIDList(List<Integer> itemList) {
+        this.itemsIDList = itemsIDList;
     }
 }
