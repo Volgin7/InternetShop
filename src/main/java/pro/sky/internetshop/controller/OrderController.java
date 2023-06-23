@@ -18,9 +18,12 @@ public class OrderController {
     }
 
     @GetMapping("/add")
-    public Basket addOrder(@RequestParam String stringOfItems) {
-        return serviceOrder.add(stringOfItems);
+    public Basket addOrder(@RequestParam String idList) {
+        return serviceOrder.add(idList);
     }
 
-
+    @GetMapping("/get")
+    public Basket getOrder() {
+        return serviceOrder.get();
+    }
 }

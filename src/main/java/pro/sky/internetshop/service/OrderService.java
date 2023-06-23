@@ -5,4 +5,5 @@ import pro.sky.internetshop.model.Basket;
 
 public interface OrderService {
     Basket add(String stringOfItems);
+    Basket get();
 }
