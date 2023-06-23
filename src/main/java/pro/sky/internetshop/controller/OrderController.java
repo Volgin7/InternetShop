@@ -9,7 +9,7 @@ import pro.sky.internetshop.service.OrderServiceImpl;
 
 
 @RestController
-@RequestMapping("/store/order")
+@RequestMapping("/order")
 public class OrderController {
     private final OrderServiceImpl serviceOrder;
 
@@ -18,7 +18,7 @@ public class OrderController {
     }
 
     @GetMapping("/add")
-    public Basket addOrder(@RequestParam String idList) {
+    public Basket addOrder(@RequestParam int[] idList) {
         return serviceOrder.add(idList);
     }
 
